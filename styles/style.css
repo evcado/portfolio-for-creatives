@@ -106,41 +106,42 @@
 :root {
   /* Typography */
   --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Eczar", serif;
+  --font-family-heading: "Caprasimo", serif;
   --font-family-project-title: "Eczar", serif;
+
   /* Core Colours */
-  --color-text-primary: #222;
-  --color-text-secondary: #333;
-  --color-accent-primary: #5200ff;
-  --color-accent-secondary: #ff057c;
-  --color-overlay-primary: rgba(82, 0, 255, 0.5);
+  --color-text-primary: #0e0e0e;
+  --color-text-secondary: #060606;
+  --color-accent-primary: #000000;
+  --color-accent-secondary: #171717;
+  --color-overlay-primary: rgba(255, 255, 255, 0.5);
   --color-highlight: lemonchiffon;
   --color-fallback: #ff057c; /* Fallback color for glitch effect on 404 page */
   /* Backgrounds */
   --color-bg: #fdfdfd;
   --color-bg-about: #f5f5f5;
   --color-bg-footer: #f5f5f5;
-  --color-bg-holding-page: rgba(82, 0, 255, 0.6);
+  --color-bg-holding-page: rgba(254, 254, 254, 0.6);
   /* Headings */
-  --h1-color: #5200ff;
-  --h2-color: #5200ff;
-  --h3-color: #5200ff;
-  --h4-color: #5200ff;
-  --h5-color: #5200ff;
-  --h6-color: #5200ff;
+  --h1-color: #1f1711;
+  --h2-color: #1f1711;
+  --h3-color: #1f1711;
+  --h4-color: #1f1711;
+  --h5-color: #1f1711;
+  --h6-color: #1f1711;
   /* Special Text Colours */
-  --color-text-holding-title: #ebedf0;
+  --color-text-holding-title: #1f1711;
   --color-text-project-category: #ffffff;
   --color-text-project-description: #222;
   --color-text-project-sidebar: #222;
-  --color-text-project-title: #5200ff;
+  --color-text-project-title: #000000;
   --color-text-work-grid-title: #ffffff;
   /* Link States */
-  --color-link: #5200ff;
+  --color-link: #000000;
   --color-link-hover: #111;
-  --color-link-visited: #5200ff;
+  --color-link-visited: #2d5b4e;
   /* Navigation */
-  --color-nav-link: #5200ff;
+  --color-nav-link: #000000;
   --color-nav-link-hover: #321575;
   --color-nav-arrow: #5200ff;
   --color-nav-arrow-hover: #000;
@@ -152,7 +153,12 @@
   --color-bg-sidebar-project: orangered;
   --color-bg-sidebar-work: lemonchiffon;
   --color-gradient-hero: linear-gradient(90deg, #ff00ff, #00ffff);
-  --color-gradient-project-details: linear-gradient(-225deg, #ff057c 0%, #8d0b93 50%, #321575 100%);
+  --color-gradient-project-details: linear-gradient(
+    -225deg,
+    #ffffff 0%,
+    #f3f1f3 50%,
+    #ffffff 100%
+  );
   /* Special Elements */
   --color-icon-heart: darkred;
   --color-text-holding-footer: #f8f8ff;
@@ -206,7 +212,8 @@
 html {
   box-sizing: border-box; /* Makes sure padding and borders don't add extra width to elements */
   scroll-behavior: smooth; /* Adds smooth scrolling between sections */
-  cursor: url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
+  cursor:
+    url("../assets/temp/up-cursor.png"), auto !important; /* Custom cursor (change the URL below to use your own) */
 
   /* TODO: Replace the URL above to add a custom cursor. 
      If you want to use the default browser cursor, just delete this line. */
@@ -234,7 +241,9 @@ body {
 /* ------------------------------- */
 
 ::selection {
-  background: var(--color-bg-selection); /* Uses your custom color for highlighted text */
+  background: var(
+    --color-bg-selection
+  ); /* Uses your custom color for highlighted text */
 }
 
 /* ---------------------------------------- */
@@ -761,7 +770,9 @@ a.nav-link-primary:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: var(--color-bg-full-width); /* Background color for full-width sections */
+  background: var(
+    --color-bg-full-width
+  ); /* Background color for full-width sections */
   margin-bottom: 1rem;
 }
 
@@ -815,13 +826,17 @@ a.nav-link-primary:hover {
 .portfolio,
 .project-wrapper,
 .work-sidebar-wrapper {
-  padding: var(--padding-tiny); /* Padding to keep content from touching edges */
+  padding: var(
+    --padding-tiny
+  ); /* Padding to keep content from touching edges */
 }
 
 /* Work Sidebar on Mobile */
 .work-sidebar {
   width: 100%;
-  background: var(--color-bg-sidebar-work); /* Background color for the sidebar */
+  background: var(
+    --color-bg-sidebar-work
+  ); /* Background color for the sidebar */
 }
 
 /* Main Work Area with Sidebar on Mobile */
@@ -832,7 +847,10 @@ a.nav-link-primary:hover {
 /* Defining the work page grid */
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Creates a responsive grid */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Creates a responsive grid */
   grid-gap: 1rem; /* Space between grid items */
   /* The auto-fit and minmax() function help ensure responsiveness across screen sizes */
 }
@@ -871,7 +889,9 @@ a.nav-link-primary:hover {
   align-items: center;
   flex-direction: column;
   padding: var(--padding-small);
-  background-color: var(--color-overlay-primary); /* Background color of the overlay */
+  background-color: var(
+    --color-overlay-primary
+  ); /* Background color of the overlay */
   transition:
     opacity var(--duration-normal),
     visibility var(--duration-normal);
@@ -1167,7 +1187,9 @@ a.nav-link-primary:hover {
 .project-details {
   width: 100%;
   padding: var(--padding-small);
-  background: var(--color-gradient-project-details); /* TODO: Remove gradient background if you prefer a simpler design */
+  background: var(
+    --color-gradient-project-details
+  ); /* TODO: Remove gradient background if you prefer a simpler design */
 }
 
 /* Previous/Next Arrow Styles */
@@ -1272,7 +1294,9 @@ a.nav-link-primary:hover {
 
 .holding-page-copyright {
   font-size: 0.8rem; /* Smaller font size for copyright text */
-  color: var(--color-text-holding-footer); /* Custom color for the footer text */
+  color: var(
+    --color-text-holding-footer
+  ); /* Custom color for the footer text */
   margin-bottom: 0; /* Removes default margin from the bottom of the copyright text */
 }
 
@@ -1467,7 +1491,7 @@ to keep your styles reusable and consistent.
   /* Work Page Grid for Large Devices */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
     grid-gap: 1rem;
   }
 
@@ -1625,7 +1649,7 @@ to keep your styles reusable and consistent.
   /* TODO: Add styles here for X-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
 
@@ -1635,7 +1659,7 @@ to keep your styles reusable and consistent.
   /* TODO: Add styles here for XX-large devices. */
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
 }
 
