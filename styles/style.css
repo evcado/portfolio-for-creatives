@@ -32,8 +32,8 @@
 /* TODO: Replace these Google Fonts with the ones you want to use on your site. */
 /* Remember, the more fonts you load, the longer it can take for your page to load. */
 
-/* Eczar Font (for headers or special text) */
-@import url("https://fonts.googleapis.com/css2?family=Eczar:wght@400;500;600;700;800&display=swap");
+/* Encode sans Font (for headers or special text) */
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap"rel="stylesheet");
 
 /* Rubik Font (clean and modern for body text) */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
@@ -105,9 +105,9 @@
 
 :root {
   /* Typography */
-  --font-family-body: "Inter", sans-serif;
-  --font-family-heading: "Caprasimo", serif;
-  --font-family-project-title: "Eczar", serif;
+  --font-family-body: "Encode Sans", sans-serif;
+  --font-family-heading: "Encode Sans", sans-serif;
+  --font-family-project-title: "Encode Sans", sans-serif;
 
   /* Core Colours */
   --color-text-primary: #0e0e0e;
