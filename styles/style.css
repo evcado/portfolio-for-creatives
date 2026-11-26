@@ -479,8 +479,9 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   line-height: 1.2;
+  font-weight: 250;
   margin-bottom: 1rem;
   color: var(--h4-color);
 }
@@ -1362,11 +1363,11 @@ a.nav-link-primary:hover {
 }
 
 /* Project Services */
-.box2 {
+.box-2 {
   display: inline-block;
-  padding: var(--padd-butt);
-  border: 1px var(--hyperlink-color);
-  border-radius: var(--border-radius);
+  padding: var(--padding-tiny);
+  border: 1px var(--color-bg-selection) solid;
+  border-radius: var(--radius-sm);
 }
 
 .project-image-pair {
@@ -1687,6 +1688,7 @@ to keep your styles reusable and consistent.
   .project-image-container,
   .project-description-container {
     flex-direction: row;
+    padding: var(--padding-jumbo);
   }
 
   .section-container {
