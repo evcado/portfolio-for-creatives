@@ -112,7 +112,7 @@
   /* Core Colours */
   --color-text-primary: #ffffff;
   --color-text-secondary: #ffffff;
-  --color-accent-primary: #ffffff;
+  --color-accent-primary: #6f0c2a;
   --color-accent-secondary: #ffffff;
   --color-overlay-primary: rgba(0, 0, 0, 0.5);
   --color-highlight: rgb(0, 0, 0);
@@ -129,7 +129,6 @@
   --h4-color: #000000;
   --h5-color: #ffffff;
   --h6-color: #000000;
-  --h7-color: #6f0c2a;
   /* Special Text Colours */
   --color-text-holding-title: #000000;
   --color-text-project-category: #6f0c2a;
@@ -500,13 +499,6 @@ h6 {
   color: var(--h6-color);
 }
 
-h7 {
-  font-size: 1.2rem;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-  color: var(--h7-color);
-}
-
 /* ------------------------------------------------------------------ */
 /* 📝 Paragraph and Text Styles                                       */
 /* Base text styles for body copy, bold, italic, and fine print       */
@@ -518,6 +510,9 @@ p {
   margin-bottom: 1rem;
 }
 
+.about-paragraph {
+  color: var(--color-accent-primary);
+}
 strong {
   font-weight: 600; /* Makes text bold */
 }
@@ -633,6 +628,10 @@ a:active {
   /* Useful for mobile tap interactions */
 }
 
+a.footer-social-link {
+  color: var(--color-text-primary);
+  font-size: 3rem;
+}
 /* -------------------------------------------------------------------------- */
 /* 🧭 Hyperlink Class Styles                                                  */
 /* These are custom styles for specific types of navigation links             */
@@ -1015,7 +1014,7 @@ a.nav-link-primary:hover {
   grid-row: 1 / 2; /* Image spans the first row */
 }
 
-#details.about-me {
+.details.about-me {
   display: flex;
   flex-direction: row;
   padding: 0rem;
