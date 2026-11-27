@@ -466,7 +466,7 @@ h2 {
   font-size: 2rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--h2-color);
 }
 
@@ -568,14 +568,13 @@ sup {
 
 .highlight-gradient {
   background: var(--color-gradient-hero);
-  -webkit-background-clip: text;
   color: transparent;
   font-weight: bold;
 }
 
 /* 📂 Project grid title — used in grid view (like a portfolio gallery) */
 .work-grid-project-title {
-  font-size: 2.875rem;
+  font-size: 2rem;
   color: var(--color-text-work-grid-title);
   text-wrap: balance;
 }
@@ -1312,9 +1311,12 @@ a.nav-link-primary:hover {
   margin-bottom: 1rem;
 }
 .project-item {
-  font-size: 1rem;
-  line-height: 1.2; /* Consistent line height for project items to improve spacing */
-  margin-bottom: 0.25rem;
+  width: 100%;
+  grid-column: 1 / 7;
+  padding: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 /* Padding of project info section*/
