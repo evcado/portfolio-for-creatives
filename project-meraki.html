@@ -38,11 +38,13 @@
       <ul class="nav-branding">
         <!-- Logo (standalone LI) -->
         <li class="nav-branding-logo">
-          <a href="index.html">
+          <a href="index.html" class="logo-container">
             <img
               src="assets/Website_Photos/SVG/Logo.svg"
               alt="Your portfolio logo"
+              class="logo"
             />
+            <h1 class="wordmark">Evelyn McCammon</h1>
           </a>
         </li>
         <li class="nav-branding-item">
@@ -58,7 +60,6 @@
       </ul>
     </header>
     <div class="project-wrapper-full-width">
-      <aside class="project-full-width"></aside>
       <main class="project-full-width">
         <figure class="project-image">
           <img
@@ -125,28 +126,29 @@
             </h4>
           </div>
         </div>
-        <div class="project-image-pair">
-          <figure
-            class="project-pair slide-up show"
-            style="transition-delay: 0.06s"
-          >
-            <img
-              src="assets/Website_Photos/Meraki/Wine_Closeup.jpg"
-              loading="lazy"
-              alt="Image of UI interface for Pangea roommate searching app"
-            />
-          </figure>
-          <figure
-            class="project-pair slide-up show"
-            style="transition-delay: 0.07s"
-          >
-            <img
-              src="assets/Website_Photos/Meraki/Name_Description.jpg"
-              loading="lazy"
-              alt="Image of Pangea logo on images of three people eating dinner."
-            />
-          </figure>
-        </div>
+        <section class="full-width-section">
+          <div class="section-container">
+            <div class="section-item one-half">
+              <figure>
+                <img
+                  src="assets/Website_Photos/Meraki/Name_Description.jpg"
+                  loading="lazy"
+                  alt="Image of Pangea logo on images of three people eating dinner."
+                />
+              </figure>
+            </div>
+            <div class="section-item one-half">
+              <figure>
+                <img
+                  src="assets/Website_Photos/Meraki/Name_Description.jpg"
+                  loading="lazy"
+                  alt="Image of Pangea logo on images of three people eating dinner."
+                />
+              </figure>
+            </div>
+          </div>
+        </section>
+
         <div class="project-video-container">
           <iframe
             src="https://player.vimeo.com/video/228122256"
@@ -173,7 +175,7 @@
           </li>
         </ul>
 
-        <div class="project-description-container">
+        <div class="project-arrow-container">
           <ul class="project-navigation">
             <li class="arrow-left">
               <a href="project-3.html" class="navigation-arrow"
@@ -232,11 +234,11 @@
 
       <li class="footer-full-width">
         <p><a href="#top">Smooth scroll to the top</a></p>
-        <p class="footer-fineprint">
-          &copy; <span id="copyright-years">2027-</span>. Hand crafted with
+        <h5 class="footer-fineprint">
+          &copy; <span id="copyright-years">2026-</span>. Hand crafted with
           <span class="heart">❤</span>
           by Evelyn McCammon
-        </p>
+        </h5>
         <script>
           document.getElementById("copyright-years").textContent +=
             new Date().getFullYear();
