@@ -454,7 +454,7 @@ svg {
 /* Heading Styles (h1 - h6) */
 
 h1 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-family: var(--font-family-heading);
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -707,6 +707,7 @@ a.nav-link-primary:hover {
   align-items: center;
   justify-content: center;
   min-height: 3rem;
+  background: yellowgreen;
 }
 .nav-branding {
   display: flex;
